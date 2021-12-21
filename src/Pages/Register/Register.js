@@ -26,10 +26,8 @@ export default function Register() {
       setTimeout(() => {
         navigate("/");
       }, 3000);
-      
     } catch {
       notifyError();
-      navigate("/");
     }
   }
   const paperStyle = {
