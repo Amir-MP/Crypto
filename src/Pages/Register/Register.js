@@ -15,6 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "./Register.css";
 export default function Register() {
   let navigate = useNavigate();
+  const notifyError = () => toast("خطایی رخ داده است");
   const notify = () => toast("ثبت نام انجام شد");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,9 +23,13 @@ export default function Register() {
     try {
       await signup(email, password);
       setTimeout(() => {
+        notify();
         navigate("/");
       }, 3000);
-    } catch {}
+    } catch {
+      notifyError();
+      navigate("/");
+    }
   }
   const paperStyle = {
     padding: 60,
@@ -56,7 +61,6 @@ export default function Register() {
           </Grid>
 
           <TextField
-          
             className="label4"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="ایمیل را وارد کنید"
@@ -64,7 +68,7 @@ export default function Register() {
             required
           />
           <TextField
-           style={{paddingTop:'20px',paddingBottom:'20px'}}
+            style={{ paddingTop: "20px", paddingBottom: "20px" }}
             className="label3"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="پسورد را وارد کنید"

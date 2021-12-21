@@ -148,10 +148,11 @@ export default function HomeMore() {
                   sx={{ fontFamily: "Iranian_Sans" }}
                   variant="body2"
                   color="text.secondary"
-                >
+                >{" "}
                   تتر یک فلسفه‌ی ساده داره: به ازای هر یک تتری که به صورت
                   دیجیتال وجود داره، ما (کمپانی مالک تتر) یک دلار در بانک
-                  نگهداری می‌کنیم.به این ترتیب قیمت تتر همیشه ثابت می‌مونه.
+                 
+                 نگهداری می‌کنیم.به این ترتیب قیمت تتر همیشه ثابت می‌مونه.
                 </Typography>
               </CardContent>
             </CardActionArea>
