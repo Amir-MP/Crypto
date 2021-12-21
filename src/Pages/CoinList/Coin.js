@@ -77,7 +77,7 @@ const Coin = ({ name, image, symbol, price, priceChange }) => {
                   width: 100,
                 }}
               >$
-                {millify(price, { precision: 1 })}
+                {millify(price, { precision: 5 })}
               </TableCell>
               <TableCell
                 align="left"
