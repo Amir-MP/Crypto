@@ -24,7 +24,6 @@ export default function Register() {
       await signup(email, password);
       notify();
       setTimeout(() => {
-      
         navigate("/");
       }, 3000);
       
