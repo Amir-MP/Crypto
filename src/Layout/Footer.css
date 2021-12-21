@@ -1,0 +1,10 @@
+.footer {
+  margin-top: -80px !important;
+}
+.logo {
+  display: block;
+  padding-top: 30px;
+  margin-left: -100%;
+  margin-bottom: -180px;
+  width: 150px;
+}

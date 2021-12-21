@@ -1,0 +1,10 @@
+.label label {
+  direction: rtl !important;
+
+  margin-left: 270px !important;
+}
+.label2 label {
+  direction: rtl !important;
+
+  margin-left: 250px !important;
+}
