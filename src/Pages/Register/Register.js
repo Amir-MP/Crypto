@@ -23,9 +23,10 @@ export default function Register() {
     try {
       await signup(email, password);
       setTimeout(() => {
-        notify();
+      
         navigate("/");
       }, 3000);
+      notify();
     } catch {
       notifyError();
       navigate("/");
