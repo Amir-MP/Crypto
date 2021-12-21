@@ -22,11 +22,12 @@ export default function Register() {
   async function handleSignup() {
     try {
       await signup(email, password);
+      notify();
       setTimeout(() => {
       
         navigate("/");
       }, 3000);
-      notify();
+      
     } catch {
       notifyError();
       navigate("/");
@@ -84,7 +85,6 @@ export default function Register() {
             fullWidth
             onClick={() => {
               handleSignup();
-              notify();
             }}
           >
             <Typography style={{ color: "white" }}>ثبت نام</Typography>{" "}
