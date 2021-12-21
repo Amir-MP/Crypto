@@ -69,7 +69,7 @@ export default function Info() {
           <Typography
             sx={{
               fontSize: {
-                lg: 28,
+                lg: 30,
                 md: 22,
                 sm: 14,
                 xs: 12,
@@ -91,7 +91,7 @@ export default function Info() {
           <Typography
             sx={{
               fontSize: {
-                lg: 25,
+                lg: 27,
                 md: 20,
                 sm: 12,
                 xs: 10,
