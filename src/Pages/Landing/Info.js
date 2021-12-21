@@ -75,7 +75,7 @@ export default function Info() {
                 xs: 12,
               },
             }}
-            px={{ xs: 3, sm: 10 }}
+            px={{ xs: 4, sm: 10 }}
             mt={{ xs: 3, sm: 10 }}
             style={{
               fontFamily: "Iranian_Sans",
@@ -97,7 +97,8 @@ export default function Info() {
                 xs: 10,
               },
             }}
-            px={{ xs: 8, sm: 16, md: 19 }}
+            
+            px={{ xs: 9, sm: 16, md: 19 }}
             mt={{ xs: 1, sm: 10 }}
             style={{ fontFamily: "Iranian_Sans", color: "white" }}
             className={classes.typography2}
