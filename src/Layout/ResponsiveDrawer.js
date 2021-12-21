@@ -120,14 +120,15 @@ export default function PersistentDrawerRight() {
     try {
       navigate("/login");
       if (currentUser != null) {
+       
         logout();
+        window.location.reload(false);
         notify();
       } else {
         notifyError();
       }
     } catch {
       if (currentUser == null) {
-
         notifyNotFound();
       } else {
         notifyError();
