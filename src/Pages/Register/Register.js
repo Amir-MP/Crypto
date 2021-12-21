@@ -61,13 +61,13 @@ export default function Register() {
             <Typography variant="h4">ثبت نام</Typography>
           </Grid>
 
-    {/*       <TextField
+          <TextField
             className="label4"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="ایمیل را وارد کنید"
             fullWidth
             required
-          /> */}
+          />
           <TextField
             style={{ paddingTop: "20px", paddingBottom: "20px" }}
             className="label3"
