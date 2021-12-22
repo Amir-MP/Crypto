@@ -29,11 +29,11 @@ const Footer = () => {
                 لینک ها
               </Box>
               <Box py={{ xs: 1, sm: 2 }}>
-                <Link style={{ color: "white" }} href="/" color="inherit">
+                <Link style={{ color: "white" }} href="/" >
                   درباره ما
                 </Link>
               </Box>
-              <Link style={{ color: "white" }} href="/" color="white">
+              <Link style={{ color: "white" }} href="/">
                 تماس با ما
               </Link>
             </Grid>

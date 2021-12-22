@@ -32,7 +32,7 @@ const Landing = () => {
   return (
     <div className={classes.div}>
       <Box className={classes.box} style={{ backgroundColor: "white", pl: 10 }}>
-        <Container maxWidth="100%">
+        <Container maxWidth="xl">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={4}>
               <Box>

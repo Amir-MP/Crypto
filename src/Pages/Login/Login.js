@@ -57,7 +57,7 @@ const Login = () => {
       justifyContent="center"
       style={{ minHeight: "100vh" }}
     >
-      <Grid xs={12} sm={6} md={4} dir="rtl">
+      <Grid item xs={12} sm={6} md={4} dir="rtl">
         <Paper elevation={10} style={paperStyle}>
           <Grid align="center">
             <Avatar style={avatarStyle}></Avatar>
