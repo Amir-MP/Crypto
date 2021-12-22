@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import { makeStyles } from "@material-ui/styles";
 import "./TrendCoins.css";
+import { useQuery } from "react-query";
 const useStyle = makeStyles({
   cardStyle: {
     display: "inline-grid",
@@ -46,16 +47,15 @@ const useStyle = makeStyles({
 });
 const TrendCoins = () => {
   const classes = useStyle();
-  const [coins, setCoins] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("https://api.coingecko.com/api/v3/search/trending")
-      .then((res) => {
-        setCoins(res.data.coins);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  async function fetchtrend() {
+    const response = await fetch(
+      "https://api.coingecko.com/api/v3/search/trending"
+    );
+    return response.json();
+  }
+  const { data } = useQuery("trend", fetchtrend);
+  console.log(data);
 
   return (
     <div>
@@ -77,7 +77,7 @@ const TrendCoins = () => {
         spacing={0}
         className={classes.gridContainer}
       >
-        {coins.map((trend) => {
+        {data?.coins.map((trend) => {
           return (
             <Masonry
               breakpointCols={1}
