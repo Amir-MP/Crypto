@@ -67,6 +67,7 @@ const Coins = () => {
       )
       .then((res) => {
         setCoins(res.data);
+      
       })
       .catch((err) => console.log(err));
   }, []);

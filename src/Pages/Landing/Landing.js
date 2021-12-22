@@ -46,7 +46,7 @@ const Landing = () => {
           {" "}
           چرا ما را باید انتخاب کنید؟
         </Typography>
-        <Container maxWidth="100%">
+        <Container maxWidth="false">
           <Grid container spacing={10}>
             <Grid item xs={12} sm={4}>
               {" "}

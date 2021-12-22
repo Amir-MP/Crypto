@@ -54,7 +54,6 @@ const TrendCoins = () => {
     return response.json();
   }
   const { data } = useQuery("trend", fetchtrend);
-  console.log(data);
 
   return (
     <div>
