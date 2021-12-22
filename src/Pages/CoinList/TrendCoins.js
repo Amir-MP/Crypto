@@ -53,7 +53,6 @@ const TrendCoins = () => {
       .get("https://api.coingecko.com/api/v3/search/trending")
       .then((res) => {
         setCoins(res.data.coins);
-        console.log(res.data.coins);
       })
       .catch((err) => console.log(err));
   }, []);
